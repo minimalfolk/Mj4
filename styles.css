@@ -111,8 +111,13 @@ header .logo {
   align-items: center;
 }
 
+#search-overlay .search-container {
+  width: 80%;
+  max-width: 400px;
+}
+
 #search-overlay input {
-  width: 60%;
+  width: 100%;
   padding: 15px;
   font-size: 1.2rem;
   border: none;
