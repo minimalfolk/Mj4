@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memories Jar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Memories Jar</div>
+    <input type="text" id="search" placeholder="Search memories...">
+  </header>
+
+  <main>
+    <section id="add-memory">
+      <h2>Add a New Memory</h2>
+      <form id="memory-form">
+        <input type="text" id="memory-title" placeholder="Memory Title" required>
+        <input type="date" id="memory-date" required>
+        <select id="memory-category">
+          <option value="Personal">Personal</option>
+          <option value="Work">Work</option>
+          <option value="Family">Family</option>
+          <option value="Travel">Travel</option>
+        </select>
+        <textarea id="memory-description" placeholder="Details about the memory..." required></textarea>
+        <button type="submit">Save Memory</button>
+      </form>
+    </section>
+
+    <section id="memory-list">
+      <h2>Saved Memories</h2>
+      <div id="memories"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
