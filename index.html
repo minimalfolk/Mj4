@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="logo">Memories Jar</div>
-    <input type="text" id="search" placeholder="Search memories...">
+    <button id="search-icon" title="Search memories"></button>
   </header>
 
   <main>
@@ -17,7 +17,6 @@
       <h2>Add a New Memory</h2>
       <form id="memory-form">
         <input type="text" id="memory-title" placeholder="Memory Title" required>
-        <input type="date" id="memory-date" required>
         <select id="memory-category">
           <option value="Personal">Personal</option>
           <option value="Work">Work</option>
@@ -34,6 +33,10 @@
       <div id="memories"></div>
     </section>
   </main>
+
+  <div id="search-overlay">
+    <input type="text" id="search" placeholder="Search memories..." />
+  </div>
 
   <script src="script.js"></script>
 </body>
