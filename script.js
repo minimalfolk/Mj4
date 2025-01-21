@@ -51,6 +51,7 @@ form.addEventListener('submit', (e) => {
 // Search icon toggle
 searchIcon.addEventListener('click', () => {
   searchOverlay.style.display = 'flex';
+  searchInput.focus();
 });
 
 // Search functionality
@@ -63,11 +64,13 @@ searchInput.addEventListener('input', (e) => {
   displayMemories(filteredMemories);
 });
 
-// Close search on overlay click
-searchOverlay.addEventListener('click', () => {
-  searchOverlay.style.display = 'none';
-  searchInput.value = '';
-  displayMemories();
+// Close search overlay on click outside
+searchOverlay.addEventListener('click', (e) => {
+  if (e.target === searchOverlay) {
+    searchOverlay.style.display = 'none';
+    searchInput.value = '';
+    displayMemories();
+  }
 });
 
 // Initial display
