@@ -22,6 +22,7 @@
           <option value="Work">Work</option>
           <option value="Family">Family</option>
           <option value="Travel">Travel</option>
+          <option value="Achievement">Achievement</option>
         </select>
         <textarea id="memory-description" placeholder="Details about the memory..." required></textarea>
         <button type="submit">Save Memory</button>
@@ -35,7 +36,9 @@
   </main>
 
   <div id="search-overlay">
-    <input type="text" id="search" placeholder="Search memories..." />
+    <div class="search-container">
+      <input type="text" id="search" placeholder="Search memories..." />
+    </div>
   </div>
 
   <script src="script.js"></script>
